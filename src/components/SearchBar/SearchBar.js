@@ -1,9 +1,12 @@
 import React from 'react';
 
+
 function SearchBar() {
     return (
         <>
-        <h1>Here is our search bar</h1>
+        <form className="example" />
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit">Search<i class="fa fa-search"></i></button>      
         </>
     );
 }

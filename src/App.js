@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Search from './pages/Search';
 import Saved from './pages/Saved';
+
+import Header from './components/Header/Header';
 import Navbar from "./components/Navbar/Navbar";
 import Wrapper from "./components/Wrapper/Wrapper";
 
@@ -10,6 +12,7 @@ function App() {
         <Router>
             <div>
                 <Navbar />
+                <Header />
                 <Wrapper>
                     <Route exact path="/" component={Search} />
                     <Route exact path="/home" component={Search} />

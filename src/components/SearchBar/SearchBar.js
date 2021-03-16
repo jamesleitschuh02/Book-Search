@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Search() {
+function SearchBar() {
     return (
         <>
         <h1>Here is our search bar</h1>
@@ -8,4 +8,4 @@ function Search() {
     );
 }
 
-export default Search;
+export default SearchBar;

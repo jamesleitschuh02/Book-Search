@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-function SearchBar() {
+function SearchBar(props) {
     return (
         <>
         <form className="example" />
-            <input type="text" placeholder="Search.." name="search" />
-            <button type="submit">Search<i class="fa fa-search"></i></button>      
+            <input type="text" placeholder="Search.." name="search" onChange={props.handleInputChange} />
+            <button type="submit" onClick={props.searchBook}>Search</button>      
         </>
     );
 }

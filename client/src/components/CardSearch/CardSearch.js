@@ -1,6 +1,6 @@
 import React from 'react';
 import API from '../../utils/API';
-import './Card.css';
+import './CardSearch.css';
 import Button from '../Button/Button';
 import placeholder from '../../assets/images/placeholder.png';
 

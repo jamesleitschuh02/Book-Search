@@ -27,7 +27,7 @@ function Saved() {
         <Wrapper>
         {savedBooks.map((book) => {
                 return (
-                    <Results data={book} key={book.id} />
+                    <Results data={book} key={book.id} id={book._id} search={false} />
                 )
             })}
         </Wrapper>

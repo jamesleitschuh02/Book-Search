@@ -36,7 +36,7 @@ function Search() {
             />
             {bookResults.map((book) => {
                 return (
-                    <Results data={book} key={book.id} />
+                    <Results data={book} key={book.id} search={true} />
                 )
             })}
         </Wrapper>

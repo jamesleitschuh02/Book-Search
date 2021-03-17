@@ -10,10 +10,13 @@ function Search() {
 
     const searchBook = event => {
         event.preventDefault();
-
+        callApi();
+    };
+    
+    const callApi = () => {     
         API.BookSearch(search)
             .then(res => {
-                setBookResults(res.data.items);
+                setBookResults(res);
             });
     };
 
@@ -31,7 +34,11 @@ function Search() {
                 handleInputChange={handleInputChange}
                 searchBook={searchBook}    
             />
-            <Results data={bookResults}/>
+            {bookResults.map((book) => {
+                return (
+                    <Results data={book} key={book.id} />
+                )
+            })}
         </Wrapper>
     );
 }

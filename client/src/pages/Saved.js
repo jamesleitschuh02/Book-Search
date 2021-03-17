@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import API from '../utils/API';
 import Wrapper from '../components/Wrapper/Wrapper';
@@ -23,9 +24,6 @@ function Saved() {
     return(
         <>
         <h1>Saved Books!</h1>
-        {/* <Wrapper>
-            <Test data={savedBooks} />
-        </Wrapper> */}
         <Wrapper>
         {savedBooks.map((book) => {
                 return (

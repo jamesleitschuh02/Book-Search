@@ -18,7 +18,7 @@ function Results(props) {
             <CardResults
                 title={props.data.title}
                 author={props.data.author}
-                picture={props.data.picture}
+                picture={props.data.image}
                 synopsis={props.data.synopsis}
                 link={props.data.link}
                 id={props.id}

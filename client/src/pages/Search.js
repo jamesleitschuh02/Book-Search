@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import API from '../utils/API';
 import Wrapper from '../components/Wrapper/Wrapper';
 import SearchBar from '../components/SearchBar/SearchBar';
 import Results from '../components/Results/Results';
+import './Search.css';
 
 function Search() {
     const [search, setSearch] = useState("");
@@ -24,13 +25,10 @@ function Search() {
         setSearch(event.target.value);
     };
 
-    useEffect(() => {
-        console.log("OUR NEW BOOK RESULTS ARE ", bookResults);
-    },[bookResults]);
-
     return (
         <Wrapper>
             <SearchBar
+                className="searchBar"
                 handleInputChange={handleInputChange}
                 searchBook={searchBook}    
             />

@@ -30,7 +30,6 @@ function Card(props) {
                         <h5 className="card-title">{props.title}</h5>
                         <h5 className="card-title">{props.author}</h5>
                             <p className="card-text">{props.synopsis}</p>
-                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                     <Button buttonTxt="Delete" function={deleteBook}/>
                     <Button buttonTxt="View" function={clickLink} />

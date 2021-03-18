@@ -1,4 +1,5 @@
 import React from 'react';
+import './SearchBar.css';
 
 
 function SearchBar(props) {
@@ -6,7 +7,8 @@ function SearchBar(props) {
         <>
         <form className="example" />
             <input type="text" placeholder="Search.." name="search" onChange={props.handleInputChange} />
-            <button type="submit" onClick={props.searchBook}>Search</button>      
+            <br></br>
+            <button classname="searchBtn" type="submit" onClick={props.searchBook}>Search</button>      
         </>
     );
 }
